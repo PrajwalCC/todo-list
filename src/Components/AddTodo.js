@@ -11,6 +11,8 @@ export default function AddTodo(props) {
             alert("Title or Description cannot be blank")
         }
         props.addTodo(title, desc);
+        setTitle("");
+        setDesc("");
     }
     return (
         <div className='container my-3' >

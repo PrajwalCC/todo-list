@@ -5,7 +5,7 @@ export default function Todos(props){
 
     let myStyle ={
         minHeight:"70vh",
-        margin:"10px auto"
+        margin:"80px auto"
     }
     return (
         <div className="container my-3" style={myStyle}>
@@ -13,7 +13,12 @@ export default function Todos(props){
 
         { props.todos.length === 0 ? <h4>Good Job you completed your work</h4> : 
          props.todos.map((todo)=> {
-            return <TodoItem todo={todo} key={todo.sno} onDelete ={props.onDelete}/>
+            return (
+            <>
+            <TodoItem todo={todo} key={todo.sno} onDelete ={props.onDelete}/>
+            <hr/>
+            </>
+        )
         }
         )}
         

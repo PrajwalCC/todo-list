@@ -66,7 +66,7 @@ function App() {
             </>)
           }}>
           </Route>
-          <Route exact path="/about">
+          <Route path="/About">
             <About />
           </Route>
         </Switch>
